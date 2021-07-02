@@ -1,32 +1,33 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
 
 body {
-  background-color: blue;
-  background-image: url(./poke.gif);
-  background-size: cover;
-  background-attachment: fixed;
-  color: blanchedalmond;
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    background-color: blue;
+    background-image: url(./poke.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    color: blanchedalmond;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 button {
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .pokepic{
-  width: 20rem;
-  display: flex;
-  align-self: center;
+    width: 20rem;
+    display: flex;
+    align-self: center;
 }
 
 .card {
-  height: 50%;
+    height: 50%;
 }

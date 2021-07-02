@@ -42,7 +42,8 @@ function getPokemonInfo(url) {
       document.querySelector(".pokemon-info").innerHTML = `
       <div>
       <h1>Name: ${data.name}</h1>
-      <p>Ailities: ${data.abilities[0].ability.name}, ${data.abilities[1].ability.name}</p>
+      <p>Type: ${data.types[0].type.name}</p>
+      <p>Abilities: ${data.abilities[0].ability.name}, ${data.abilities[1].ability.name}</p>
       <p>Height: ${data.height}</p>
       <p>Weight: ${data.weight}</p>
       </div>`;

@@ -34,7 +34,7 @@ function getPokemonInfo(url) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      // Make sure data comes throufg
+      // Make sure data comes through
       console.log(data);
       // Write data to pokemon information container
       document.querySelector(".pokemon-pic").innerHTML = `
@@ -43,7 +43,7 @@ function getPokemonInfo(url) {
       <div>
       <h1>Name: ${data.name}</h1>
       <p>Type: ${data.types[0].type.name}</p>
-      <p>Abilities: ${data.abilities[0].ability.name}, ${data.abilities[1].ability.name}</p>
+      <p>Ailities: ${data.abilities[0].ability.name}, ${data.abilities[1].ability.name}</p>
       <p>Height: ${data.height}</p>
       <p>Weight: ${data.weight}</p>
       </div>`;

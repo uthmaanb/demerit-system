@@ -9,17 +9,13 @@ body {
     background-image: url(./poke.gif);
     background-size: cover;
     background-attachment: fixed;
-    color: blanchedalmond;
+    color: black;
     font-family: sans-serif;
+    font-size: 1.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-button {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .pokepic{
@@ -28,6 +24,21 @@ button {
     align-self: center;
 }
 
+.pokebtn{
+    border-radius: 50px;
+    background: #e0e0e0;
+    padding: 1%;
+    color: black;
+    background-color: red;
+}
+
+.pic{
+    width: 15rem;
+}
+
 .card {
-    height: 50%;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  26px 26px 52px #7b7b7b, -26px -26px 52px #ffffff;
+    
 }

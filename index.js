@@ -17,7 +17,7 @@ function getPokemonList(url) {
       container.innerHTML = "";
       // Loop over pokemon list and create an HTML button for each one. Add the button to the container
       pokemon.forEach((btn) => {
-        container.innerHTML += `<button onclick="getPokemonInfo('${btn.url}')">${btn.name}</button>`;
+        container.innerHTML += `<button class='pokebtn' onclick="getPokemonInfo('${btn.url}')">${btn.name}</button>`;
       });
       // Add a next pokemon button
       container.innerHTML += `<br><br><button onclick="getPokemonList('${data.next}')">Next</button>`;
@@ -38,7 +38,7 @@ function getPokemonInfo(url) {
       console.log(data);
       // Write data to pokemon information container
       document.querySelector(".pokemon-pic").innerHTML = `
-    <img src="${data.sprites.front_default} ">`;
+    <img class='pic' src="${data.sprites.other["official-artwork"].front_default} ">`;
       document.querySelector(".pokemon-info").innerHTML = `
       <div>
       <h1>Name: ${data.name}</h1>

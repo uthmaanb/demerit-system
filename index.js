@@ -40,7 +40,7 @@ function getPokemonInfo(url) {
       document.querySelector(".pokemon-pic").innerHTML = `
     <img class='pic' src="${data.sprites.other["official-artwork"].front_default} ">`;
       document.querySelector(".pokemon-info").innerHTML = `
-      <div>
+      <div class="poke-info">
       <h1>Name: ${data.name}</h1>
       <p>Type: ${data.types[0].type.name}</p>
       <p>Ailities: ${data.abilities[0].ability.name}, ${data.abilities[1].ability.name}</p>

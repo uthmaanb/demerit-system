@@ -20,9 +20,9 @@ function getPokemonList(url) {
         container.innerHTML += `<button class='pokebtn' onclick="getPokemonInfo('${btn.url}')">${btn.name}</button>`;
       });
       // Add a next pokemon button
-      container.innerHTML += `<br><br><button onclick="getPokemonList('${data.next}')">Next</button>`;
+      container.innerHTML += `<br><br><button class='pokebtn' onclick="getPokemonList('${data.next}')">Next</button>`;
       // previous button
-      container.innerHTML += `<br><br><button onclick="getPokemonList('${data.previous}')">Previous</button>`;
+      container.innerHTML += `<br><br><button class='pokebtn' onclick="getPokemonList('${data.previous}')">Previous</button>`;
     });
 }
 
@@ -41,7 +41,7 @@ function getPokemonInfo(url) {
     <img class='pic' src="${data.sprites.other["official-artwork"].front_default} ">`;
       document.querySelector(".pokemon-info").innerHTML = `
       <div class="poke-info">
-      <h1>Name: ${data.name}</h1>
+      <h1>${data.name}</h1>
       <p>Type: ${data.types[0].type.name}</p>
       <p>Ailities: ${data.abilities[0].ability.name}, ${data.abilities[1].ability.name}</p>
       <p>Height: ${data.height}</p>
